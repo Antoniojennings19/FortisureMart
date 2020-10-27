@@ -4,7 +4,7 @@
 
 <!-- Links  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" src='./Public/Styles/custom-styles.css'>
+    <link rel="stylesheet" href='./Public/Styles/custom-styles.css'>
 <!-- Links -->
 
 <!-- Scripts -->
@@ -22,7 +22,7 @@
         font-family: 'Segdoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     body{
-        margin:0;
+        margin: 0;
     }
 
 </style>
@@ -33,10 +33,9 @@
 <body>
 <!-- Navbar -->
     <div style='background-color:#E38D0C; position: sticky; top: 0;'>
-        <button class='btn btn-primary'>Shop</button>
+        <button class=' btn-shop btn btn-primary'>Shop</button>
 
-        <h1 style=
-        'text-align: center; 
+        <h1 style='text-align: center; 
         color: #2C315D; 
         font-weight: bold; 
         font-size: 46px;
@@ -45,8 +44,7 @@
         padding-top: 15px;'>
         Fortisure<span style='color: #7D0616'>Mart</span></h1>
 
-        <img style=
-        'float: right;
+        <img style='float: right;
         margin-top: 15px;
         margin-right: 100px;
         cursor: pointer;'
@@ -75,31 +73,31 @@
 <!-- Product Container -->
     <div>
     <!-- Product 1 -->
-        <div>
-            <p>Fortisure Shoes</p>
-            <img src=''>
+        <div class='product-card-one'>
+            <p class='product-header-text'>Fortisure<span style='color: #7D0616'> Shoes</span></p>
+            <img src='./Public/Images/Products/shoes-white.jpg'>
             <p>The best shoes around</p>
-            <button>Add To Cart | $64.99</button>
+            <button class='btn btn-success'>Add To Cart | <span>$64.99</span></button>
         </div><br>
     <!-- Product 1 -->
 
     <div>
         <!-- Product 2 -->
-            <div>
-                <p>Fortisure Shirt</p>
-                <img src=''>
+            <div class='product-card-two'>
+                <p class='product-header-text'>Fortisure<span style='color: #7D0616'> Shirt</span></p>
+                <img src='./Public/Images/Products/t-shirt-black.jpg'>
                 <p>A nice fitting shirt</p>
-                <button>Add To Cart | $14.99</button>
+                <button class='btn btn-success'>Add To Cart | <span>$14.99</span></button>
             </div><br>
         <!-- Product 2 -->
 
         <div>
             <!-- Product 3 -->
-                <div>
-                    <p>Fortisure Pants</p>
-                    <img src=''>
+                <div class='product-card-three'>
+                    <p class='product-header-text'>Fortisure<span style='color: #7D0616'> Pants</span></p>
+                    <img src='./Public/Images/Products/jeans-black.jpg'>
                     <p>Water resistant pants for every occasion</p>
-                    <button>Add To Cart | $19.99</button>
+                    <button class='btn btn-success'>Add To Cart | <span>$19.99</span></button>
                 </div><br>
             <!-- Product 3 -->
     </div>
@@ -108,8 +106,19 @@
 <!-- Trending Products -->
 
 <!-- Footer -->
-    <div>
-        <button>Contact Us</button>
+    <div class='page-footer'>
+        <form action="" style='margin-left: 40%; width:350px;'>
+            <label>Full Name:</label><br>
+            <input type='text' class='form-control' placeholder="John Smith">
+
+            <label>Email:</label><br>
+            <input type='email' class='form-control' placeholder="example@email.com">
+
+            <label>How Can We Help?</label><br>
+            <textarea type='textarea' class='form-control' placeholder="John Smith"></textarea>
+
+            <input type='submit' class='btn-contact-us btn btn-primary' value="Contact Us">
+        </form>
     </div>
 </body>
 </html>
