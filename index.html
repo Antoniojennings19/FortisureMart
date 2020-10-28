@@ -18,24 +18,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- meta tags -->
 <style>
-    *{
-        font-family: 'Segdoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    body{
-        margin: 0;
-    }
+  
 
 </style>
 
 <title>Document</title>
 
 </head>
-<body>
+<div>
+<div class='page-grid'>
 <!-- Navbar -->
-    <div style='background-color:#E38D0C; position: sticky; top: 0;'>
+    <div class='navbar-grid'>
         <button class=' btn-shop btn btn-primary'>Shop</button>
 
-        <h1 style='text-align: center; 
+        <h1 style='grid-column: 2;
+        text-align: center; 
         color: #2C315D; 
         font-weight: bold; 
         font-size: 46px;
@@ -44,81 +41,110 @@
         padding-top: 15px;'>
         Fortisure<span style='color: #7D0616'>Mart</span></h1>
 
-        <img style='float: right;
-        margin-top: 15px;
-        margin-right: 100px;
+        <img style='grid-column: 3;
+        float: right;
+        /* margin-top: 15px;
+        margin-right: 100px; */
+        margin: auto;
+        margin-right: 15%;
         cursor: pointer;'
         src='./Public/Images/shopping-cart.png'>
         <hr>
     </div>
+<!-- Navbar -->
+
 <!-- Welcome Message -->
-<div>
-    <h2>Reasons to choose FortisureMart</h2>
-        <ul>
-            <li>Provides quality at affordable prices</li>
-            <li>We internally train our employees so they are the highest quality</li>
-            <li>We use the latest technologies to surpass the competition</li>      
-        </ul>
-</div>
+    <div class='our-info-grid'>
+        <!-- text left -->
+        <div class='info-text-left'>
+            <h2>Reasons to choose FortisureMart</h2>
+            <ul>
+                <li>Provides quality at affordable prices</li>
+                <li>We internally train our employees so they are the highest quality</li>
+                <li>We use the latest technologies to surpass the competition</li>      
+            </ul>
+        </div>
 
-<div>
-    <h2>Mission Statement:</h2>
-    <p>To build a nationally respected market place that utilizes the latest 
-        technologies to add great value to our customers.</p>
-</div>
-
+        <div class='info-text-right'>
+        <!-- text right -->
+            <h2>Mission Statement:</h2>
+            <p>To build a nationally respected market place that utilizes the latest 
+            technologies to add great value to our customers.</p>
+        </div>
+    </div>
+<!-- Welcome Message -->
 <hr>
 <!-- Trending Products -->
-    <h2>Trending Products</h2>
-<!-- Product Container -->
-    <div>
-    <!-- Product 1 -->
-        <div class='product-card-one'>
-            <p class='product-header-text'>Fortisure<span style='color: #7D0616'> Shoes</span></p>
-            <img src='./Public/Images/Products/shoes-white.jpg'>
-            <p>The best shoes around</p>
-            <button class='btn btn-success'>Add To Cart | <span>$64.99</span></button>
-        </div><br>
-    <!-- Product 1 -->
 
-    <div>
+    <!-- Product Container -->
+        <div class='trending-container-grid'>
+            <h2>Trending Products</h2>
+            <!-- Product 1 -->
+                <div class='product-card-one-grid'>
+                    <p class='product-header-text'>Fortisure<span style='color: #7D0616'> Shoes</span></p>
+                    <img src='./Public/Images/Products/shoes-white.jpg'>
+                    <p>The best shoes around</p>
+                    <button class='btn'>Add To Cart | <span>$64.99</span></button>
+                </div><br>
+            <!-- Product 1 -->
+        
+        
         <!-- Product 2 -->
-            <div class='product-card-two'>
+            <div class='product-card-two-grid'>
                 <p class='product-header-text'>Fortisure<span style='color: #7D0616'> Shirt</span></p>
                 <img src='./Public/Images/Products/t-shirt-black.jpg'>
                 <p>A nice fitting shirt</p>
-                <button class='btn btn-success'>Add To Cart | <span>$14.99</span></button>
+                <button class='btn'>Add To Cart | <span>$14.99</span></button>
             </div><br>
         <!-- Product 2 -->
 
-        <div>
-            <!-- Product 3 -->
-                <div class='product-card-three'>
+            
+        <!-- Product 3 -->
+                <div class='product-card-three-grid'>
                     <p class='product-header-text'>Fortisure<span style='color: #7D0616'> Pants</span></p>
                     <img src='./Public/Images/Products/jeans-black.jpg'>
                     <p>Water resistant pants for every occasion</p>
-                    <button class='btn btn-success'>Add To Cart | <span>$19.99</span></button>
+                    <button class='btn'>Add To Cart | <span>$19.99</span></button>
                 </div><br>
-            <!-- Product 3 -->
+        <!-- Product 3 -->
+        </div>
+        <!-- Product Container -->
     </div>
-
-    <hr>
 <!-- Trending Products -->
 
 <!-- Footer -->
-    <div class='page-footer'>
-        <form action="" style='margin-left: 40%; width:350px;'>
-            <label>Full Name:</label><br>
-            <input type='text' class='form-control' placeholder="John Smith">
+    <div class='page-footer-grid'>
+        <!-- Left -->
+            <div class='footer-left'>
 
-            <label>Email:</label><br>
-            <input type='email' class='form-control' placeholder="example@email.com">
+            </div>
+        <!-- Left -->
 
-            <label>How Can We Help?</label><br>
-            <textarea type='textarea' class='form-control' placeholder="John Smith"></textarea>
-
-            <input type='submit' class='btn-contact-us btn btn-primary' value="Contact Us">
-        </form>
+        <!-- Center -->
+            <div class='footer-center'>
+                <form class='form-contact'action="">
+                    <label>Full Name:</label><br>
+                    <input type='text' class='form-control' placeholder="John Smith">
+        
+                    <label>Email:</label><br>
+                    <input type='email' class='form-control' placeholder="example@email.com">
+        
+                    <label>How Can We Help?</label><br>
+                    <textarea type='textarea' class='form-control' placeholder="John Smith"></textarea>
+        
+                    <input type='submit' class='btn-contact-us btn btn-primary' value="Contact Us">
+                </form>
+            </div>
+        <!-- Center -->
+    
+        <!-- Right -->
+            <div class='footer-right'>
+                <p>Copyright | 2020 FortisureIT</p>
+            </div>
+        <!-- Right -->
+      
     </div>
+<!-- Footer -->
+</div>
 </body>
 </html>
