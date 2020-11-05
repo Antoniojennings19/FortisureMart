@@ -61,6 +61,6 @@ include './View/navbar.php';
 
 <?php
 
-include './View/footer.php';
-
+    include './View/footer.php';
+    include './Controller/form-submit.php';
 ?>
