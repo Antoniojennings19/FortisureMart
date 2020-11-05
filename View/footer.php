@@ -1,4 +1,4 @@
-    <!-- Footer -->
+<!-- Footer -->
     <div class='footer-grid'>
             <div class='footer-left'>
             </div>
@@ -26,7 +26,7 @@
                 Copyright 2020 | <a class='no-line-link' href='https://www.FortisureIT.com'>FortisureIT</a>
             </div>
         </div>
-    <!-- Footer -->
+<!-- Footer -->
     </div>
 </body>
 </html>
