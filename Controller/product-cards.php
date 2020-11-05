@@ -22,5 +22,4 @@
         //increment column num
         $colNum++;
     }
-
 ?>
