@@ -53,6 +53,9 @@ body {
   margin-right: 15%;
   cursor: pointer;
 }
+.modal-header, .modal-footer{
+  background-color: $main-color;
+}
 .our-info-grid{
   display:grid;
   grid-template-columns: 1fr 38%;

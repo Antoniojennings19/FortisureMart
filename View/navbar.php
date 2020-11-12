@@ -30,6 +30,40 @@
                     
                 </div>
 
-                <img class='shopping-cart-img' src='./View/Public/Images/shopping-cart.png'>
+                <img class='shopping-cart-img' src='./View/Public/Images/shopping-cart.png' data-toggle="modal" data-target="#modal-users-cart">
             </div>
         <!-- Navigation Bar -->
+
+<!-- Cart Modal -->
+<div class="modal fade" id="modal-users-cart" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal Content -->
+            <div class="modal-content">
+                <!-- Modal Header -->
+                    <div class="modal-header">
+                        <!-- Title -->
+                        <h4 class="modal-title">Your Cart</h4>
+                        <!-- Closing 'X' Button -->
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                <!-- Modal Header -->
+
+                <!-- Modal Body -->
+                    <div class="modal-body">
+                        <?php
+                            include './Controller/modal-display.php';
+                        ?>
+                    </div>
+                <!-- Modal Body -->
+
+                <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <!-- Second Close Button -->
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                <!-- Modal Footer -->
+            </div>
+        <!-- Modal Content -->
+    </div>
+</div>
+<!-- Cart Modal -->
