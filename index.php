@@ -5,13 +5,16 @@
     include './Controller/product-cards.php';
     include './Controller/update-cart.php';
     include './Model/query-products.php';
-    include './View/navbar.php';
+    
 
     $database = new Database();
     $db = $database->connect();
 
     $product = new Product($db);
     $productGet = $product->prodRead();
+
+    include './Controller/form-submit.php';
+    include './View/navbar.php';
 
 ?>
 
@@ -73,5 +76,5 @@
 <?php
 
     include './View/footer.php';
-    include './Controller/form-submit.php';
+
 ?>

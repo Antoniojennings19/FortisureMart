@@ -34,36 +34,48 @@
             </div>
         <!-- Navigation Bar -->
 
-<!-- Cart Modal -->
-<div class="modal fade" id="modal-users-cart" role="dialog">
-    <div class="modal-dialog">
-        <!-- Modal Content -->
-            <div class="modal-content">
-                <!-- Modal Header -->
-                    <div class="modal-header">
-                        <!-- Title -->
-                        <h4 class="modal-title">Your Cart</h4>
-                        <!-- Closing 'X' Button -->
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                <!-- Modal Header -->
+        <!-- Cart Modal -->
+            <div class="modal fade" id="modal-users-cart" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal Content -->
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <!-- Title -->
+                                    <h4 class="modal-title">Your Cart</h4>
+                                    <!-- Closing 'X' Button -->
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                            <!-- Modal Header -->
 
-                <!-- Modal Body -->
-                    <div class="modal-body">
-                        <?php
-                            include './Controller/modal-display.php';
-                        ?>
-                    </div>
-                <!-- Modal Body -->
+                            <!-- Modal Body -->
+                                <div class="modal-body">
+                                    <?php
+                                        include './Controller/modal-display.php';
+                                    ?>
+                                </div>
+                            <!-- Modal Body -->
 
-                <!-- Modal Footer -->
-                    <div class="modal-footer">
-                        <!-- Second Close Button -->
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                <!-- Modal Footer -->
+                            <!-- Modal Footer -->
+                                <div class="modal-footer">
+                                    <!-- Second Close Button -->
+                                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+
+                                    <!-- Form -->
+                                        <form action="" method="post">
+                                            <label for="nameInput">First Name</label>
+                                            <input id="nameInput" name="cartCustomerName" style='width: 150px;'>
+
+                                            <label for="idInput">ID</label>
+                                            <input id="idInput" name="cartCustomerId" style='width: 45px; margin-right: 50px;'>
+
+                                            <button type='submit' class='btn btn-primary'>Purchase</button>
+                                        </form>
+                                    <!-- Form -->
+                                </div>
+                            <!-- Modal Footer -->
+                        </div>
+                    <!-- Modal Content -->
+                </div>
             </div>
-        <!-- Modal Content -->
-    </div>
-</div>
-<!-- Cart Modal -->
+        <!-- Cart Modal -->
